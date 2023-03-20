@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "express-generator": "^4.16.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
