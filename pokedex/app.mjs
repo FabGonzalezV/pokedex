@@ -16,7 +16,7 @@ import {
   basicErrorHandler,
 } from "./appsupport.mjs";
 import { router as indexRouter } from "./routes/index.mjs";
-import { router as indexPokedex } from "./routes/pokedex.mjs";
+
 
 export const app = express();
 // view engine setup
@@ -32,7 +32,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 // Router function lists
 app.use("/", indexRouter);
-app.use("/pokeapi", indexPokedex);
+ 
 
 // error handlers
 // catch 404 and forward to error handler

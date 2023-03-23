@@ -13,8 +13,12 @@ router.post("/pokeapi", async (req, res, next) => {
     );
     const data = await response.json();
     const imageUrl = data.sprites.front_default;
-
-    res.status(200).json(imageUrl);
+    const name = data.name;
+    const info = {
+      imageUrl, 
+      name
+    }
+    res.status(200).json(info);
   } catch (error) {
     console.log(error);
   }
