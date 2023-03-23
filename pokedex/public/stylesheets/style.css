@@ -1,8 +1,170 @@
+:root {
+  --main-color-red: #FF0000;
+  --secundary-color-red: #B22222;
+  --third-color-red: #8B0000;
+  --fourth--color-red: #DC143C;
+  --main-color-blue: #00BFFF;
+  --secundary-color-blue: #1E90FF;
+  --third-color-blue: #B0E0E6;
+  --fourth-color-blue: #004D85;
+  --circle-yellow: #FFFF00;
+  --circle-green: #00FF00;
+  --circle-red: var(--main-color-red);
+  --main-border-color-gray: #2F4F4F;
+  --secundary-border-color-white: #FFFAFA;
+  --third-color-gray: #DCDCDC;
+  --fourth-color-gray: #424242;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #DC143C;
 }
 
 a {
   color: #00B7FF;
+}
+.pokedex {
+  display: flex;
+  border-radius: 10%;
+  flex-direction: row;
+  width: 40rem;
+  height: 30rem;
+
+}
+
+/*left side of the pokedex*/
+.circle-top-blue {
+  border-radius: 50%;
+  background-color: var(--third-color-blue);
+
+  border: 0.5rem solid var(--secundary-color-blue);
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.mini-circles-top {
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-border-color-gray);
+  width: 2rem;
+  height: 2rem;
+
+}
+
+#circle-1 {
+  background-color: var(--circle-green);
+
+}
+
+#circle-2 {
+  background-color: var(--circle-yellow);
+}
+
+#circle-3 {
+  background-color: var(--circle-red);
+}
+
+.pokedex-screen {
+  border: 0.3rem solid var(--secundary-border-color-white);
+  background-color: var(--main-border-color-gray);
+  width: 15rem;
+  height: 12rem;
+}
+
+.left-side {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 10%;
+  border: 0.5rem solid var(--third-color-red);
+  background-color: var(--secundary-color-red);
+}
+
+.circle-botton {
+  border-radius: 50%;
+  background-color: var(--secundary-color-blue);
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.2rem solid var(--main-border-color-gray);
+}
+
+.mini-circles-botton {
+  width: 4.5rem;
+  height: 1.2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid var(--main-border-color-gray);
+}
+
+.mini-circles-botton[id="botton1"] {
+  background-color: var(--circle-green);
+}
+
+.mini-circles-botton[id="botton2"] {
+  background-color: var(--circle-yellow);
+}
+
+.botton-bar {
+  height: 3rem;
+  width: 10rem;
+  background-color: var(--circle-yellow);
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--main-border-color-gray);
+}
+
+/*rigth side of the pokedex*/
+.rigth-side {
+  margin-top: 5rem;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 10%;
+  border: 0.5rem solid var(--third-color-red);
+  background-color: var(--secundary-color-red);
+}
+
+.botton-bar[id="rigth-bar-top"] {
+  background-color: var(--fourth-color-blue);
+  width: 15rem;
+  height: 5rem;
+}
+
+.botton-bar[id="rigth-bar-botton"] {
+  border-radius: 0%;
+  background-color: var(--main-color-blue);
+  width: 15.2rem;
+  height: 4rem;
+}
+
+.rigth-button-rect {
+  background-color: var(--third-color-gray);
+  width: 5rem;
+  height: 2rem;
+  border: 0.1rem solid var(--main-border-color-gray);
+}
+
+.rigth-button-rect[id="rbleft-botton"] {
+  border: 0.1rem solid var(--fourth-color-gray);
+  background-color: var(--main-border-color-gray);
+}
+
+.rigth-button-rect[id="rbrigth-botton"] {
+  border: 0.1rem solid var(--fourth-color-gray);
+  background-color: var(--main-border-color-gray);
+}
+
+.circle-botton[id="rcircle-gold"] {
+  background-color: var(--circle-yellow);
+}
+
+.keyboard {
+  width: 3rem;
+  height: 1.9rem;
+  border: 0.1rem solid var(--third-color-blue);
+
+}
+.hover:hover{
+  cursor: pointer;
+}
+/*logo*/
+.logos {
+  width: 50rem;
+
 }
