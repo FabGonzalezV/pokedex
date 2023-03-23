@@ -3,7 +3,7 @@ export const router = express.Router();
 import fetch from "node-fetch";
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+  res.render("index", { title: "Pokedex" });
 });
 
 router.post("/pokeapi", async (req, res, next) => {
